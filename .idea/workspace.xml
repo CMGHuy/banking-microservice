@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce8bb882-212b-44db-a2f6-279e74b05e52" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/accounts/accounts/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/accounts/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/accounts/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="ce8bb882-212b-44db-a2f6-279e74b05e52" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,15 +19,15 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/accounts" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -52,6 +48,7 @@
     "Maven.accounts [clean].executor": "Run",
     "Maven.accounts [install].executor": "Run",
     "Maven.cards [compile].executor": "Run",
+    "Maven.cards [install].executor": "Run",
     "Maven.loans [clean].executor": "Run",
     "Maven.loans [org.springframework.boot:spring-boot-maven-plugin:3.3.2:build-image].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -67,8 +64,9 @@
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
+    "ignore_missing_gitignore": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/HuyCao/Downloads/microservices-3.4.1/section4",
+    "last_opened_file_path": "E:/Workplace/banking-microservice/accounts",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,7 +76,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
+    "settings.editor.selected.configurable": "Shelf.Project.Settings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -268,7 +266,12 @@
       <workItem from="1742414979213" duration="7151000" />
       <workItem from="1742461334089" duration="613000" />
       <workItem from="1742635643397" duration="6736000" />
-      <workItem from="1742723869772" duration="13796000" />
+      <workItem from="1742723869772" duration="14848000" />
+      <workItem from="1742749706577" duration="177000" />
+      <workItem from="1742749896771" duration="23000" />
+      <workItem from="1742750037949" duration="46000" />
+      <workItem from="1742750146174" duration="143000" />
+      <workItem from="1742750304666" duration="223000" />
     </task>
     <servers />
   </component>
