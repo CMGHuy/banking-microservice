@@ -1,6 +1,6 @@
 package com.banking.cards.service;
 
-import com.banking.cards.dto.CardsDto;
+import com.banking.cards.dto.CardsDTO;
 
 public interface ICardsService {
 
@@ -15,14 +15,14 @@ public interface ICardsService {
      * @param mobileNumber - Input mobile Number
      *  @return Card Details based on a given mobileNumber
      */
-    CardsDto fetchCard(String mobileNumber);
+    CardsDTO fetchCard(String mobileNumber);
 
     /**
      *
      * @param cardsDto - CardsDto Object
      * @return boolean indicating if the update of card details is successful or not
      */
-    boolean updateCard(CardsDto cardsDto);
+    boolean updateCard(CardsDTO cardsDto);
 
     /**
      *

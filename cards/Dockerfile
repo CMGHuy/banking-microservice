@@ -2,7 +2,7 @@
 FROM openjdk:23-jdk-slim
 
 # MAINTAINER instruction is deprecated in favor of using label
-# MAINTAINER eazybytes.com
+# MAINTAINER caogiahuy77@yahoo.com
 # Information around who maintains the image
 LABEL "org.opencontainers.image.authors"="huycao"
 

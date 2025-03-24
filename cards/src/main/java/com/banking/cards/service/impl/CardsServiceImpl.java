@@ -1,7 +1,7 @@
 package com.banking.cards.service.impl;
 
 import com.banking.cards.constants.CardsConstants;
-import com.banking.cards.dto.CardsDto;
+import com.banking.cards.dto.CardsDTO;
 import com.banking.cards.entity.Cards;
 import com.banking.cards.exception.CardAlreadyExistsException;
 import com.banking.cards.exception.ResourceNotFoundException;
@@ -54,11 +54,11 @@ public class CardsServiceImpl implements ICardsService {
      * @return Card Details based on a given mobileNumber
      */
     @Override
-    public CardsDto fetchCard(String mobileNumber) {
+    public CardsDTO fetchCard(String mobileNumber) {
         Cards cards = cardsRepository.findByMobileNumber(mobileNumber).orElseThrow(
                 () -> new ResourceNotFoundException("Card", "mobileNumber", mobileNumber)
         );
-        return CardsMapper.mapToCardsDto(cards, new CardsDto());
+        return CardsMapper.mapToCardsDto(cards, new CardsDTO());
     }
 
     /**
@@ -67,7 +67,7 @@ public class CardsServiceImpl implements ICardsService {
      * @return boolean indicating if the update of card details is successful or not
      */
     @Override
-    public boolean updateCard(CardsDto cardsDto) {
+    public boolean updateCard(CardsDTO cardsDto) {
         Cards cards = cardsRepository.findByCardNumber(cardsDto.getCardNumber()).orElseThrow(
                 () -> new ResourceNotFoundException("Card", "CardNumber", cardsDto.getCardNumber()));
         CardsMapper.mapToCards(cardsDto, cards);

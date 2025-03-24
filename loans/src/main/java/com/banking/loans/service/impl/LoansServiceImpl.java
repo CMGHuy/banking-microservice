@@ -1,7 +1,7 @@
 package com.banking.loans.service.impl;
 
 import com.banking.loans.constants.LoansConstants;
-import com.banking.loans.dto.LoansDto;
+import com.banking.loans.dto.LoansDTO;
 import com.banking.loans.entity.Loans;
 import com.banking.loans.exception.LoanAlreadyExistsException;
 import com.banking.loans.exception.ResourceNotFoundException;
@@ -54,23 +54,23 @@ public class LoansServiceImpl implements ILoansService {
      * @return Loan Details based on a given mobileNumber
      */
     @Override
-    public LoansDto fetchLoan(String mobileNumber) {
+    public LoansDTO fetchLoan(String mobileNumber) {
         Loans loans = loansRepository.findByMobileNumber(mobileNumber).orElseThrow(
                 () -> new ResourceNotFoundException("Loan", "mobileNumber", mobileNumber)
         );
-        return LoansMapper.mapToLoansDto(loans, new LoansDto());
+        return LoansMapper.mapToLoansDto(loans, new LoansDTO());
     }
 
     /**
      *
-     * @param loansDto - LoansDto Object
+     * @param loansDTO - LoansDto Object
      * @return boolean indicating if the update of loan details is successful or not
      */
     @Override
-    public boolean updateLoan(LoansDto loansDto) {
-        Loans loans = loansRepository.findByLoanNumber(loansDto.getLoanNumber()).orElseThrow(
-                () -> new ResourceNotFoundException("Loan", "LoanNumber", loansDto.getLoanNumber()));
-        LoansMapper.mapToLoans(loansDto, loans);
+    public boolean updateLoan(LoansDTO loansDTO) {
+        Loans loans = loansRepository.findByLoanNumber(loansDTO.getLoanNumber()).orElseThrow(
+                () -> new ResourceNotFoundException("Loan", "LoanNumber", loansDTO.getLoanNumber()));
+        LoansMapper.mapToLoans(loansDTO, loans);
         loansRepository.save(loans);
         return  true;
     }
