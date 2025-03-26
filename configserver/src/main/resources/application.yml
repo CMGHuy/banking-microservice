@@ -2,13 +2,23 @@ spring:
   application:
     name: "configserver"
   profiles:
-    active: native
+    active: git
+  #    active: native
   cloud:
     config:
       server:
-        native:
+        git:
+          uri: https://github.com/CMGHuy/banking-microservice-config.git
+          default-label: main
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
+#        native:
 #          search-locations: "classpath:/config"
-          search-locations: "file:///E://Workplace//banking-microservice//configserver//src//main//resources//config"
+#          search-locations: "file:///E://Workplace//banking-microservice//configserver//src//main//resources//config"
+
+encrypt:
+  key: "koRWqjg21g97I7het_bclo9trLW3BGkWhzVvtilHto"
 
 server:
   port: 8071
