@@ -1,0 +1,11 @@
+build:
+  version: "2.0"
+
+loans:
+  message: "Welcome to Loans Microservice related QA APIs"
+  contactDetails:
+    name: "Huy Cao Loans QA"
+    email: "caogiahuyqa@yahoo.com"
+  onCallSupport:
+    - (785) 545-6565
+    - (853) 546-3467

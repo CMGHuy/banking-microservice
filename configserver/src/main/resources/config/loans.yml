@@ -1,0 +1,11 @@
+build:
+  version: "3.0"
+
+loans:
+  message: "Welcome to Loans Microservice related local APIs"
+  contactDetails:
+    name: "Huy Cao Cards Local"
+    email: "caogiahuylocal@yahoo.com"
+  onCallSupport:
+    - (452) 456-2176
+    - (546) 764-8934

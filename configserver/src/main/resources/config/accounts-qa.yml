@@ -1,16 +1,11 @@
-spring:
-  config:
-    activate:
-      on-profile: "qa"
-
 build:
   version: "2.0"
 
 accounts:
   message: "Welcome to Accounts Microservice related QA APIs"
   contactDetails:
-    name: "Huy Cao QA"
-    email: "caogiahuy77@yahoo.com"
+    name: "Huy Cao Accounts QA"
+    email: "caogiahuyqa@yahoo.com"
   onCallSupport:
     - (666) 265-3765
     - (666) 734-8371
