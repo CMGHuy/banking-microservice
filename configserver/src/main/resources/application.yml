@@ -16,11 +16,6 @@ spring:
 #        native:
 #          search-locations: "classpath:/config"
 #          search-locations: "file:///E://Workplace//banking-microservice//configserver//src//main//resources//config"
-  rabbitmq:
-    host: "rabbit"
-    port: 5672
-    username: "guest"
-    password: "guest"
 
 management:
   endpoints:
@@ -36,7 +31,6 @@ management:
     health:
       probes:
         enabled: true
-
 
 encrypt:
   key: "koRWqjg21g97I7het_bclo9trLW3BGkWhzVvtilHto"

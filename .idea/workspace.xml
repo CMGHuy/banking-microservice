@@ -5,27 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33e356fc-002c-495a-83cd-643a85b8b83c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/prod/common-config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/prod/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/qa/common-config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/qa/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/banking/accounts/controllers/AccountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/banking/accounts/controllers/AccountsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/test/java/com/banking/accounts/AccountsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/test/java/com/banking/accounts/AccountsApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/test/java/com/banking/cards/CardsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/test/java/com/banking/cards/CardsApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/test/java/com/banking/configserver/ConfigserverApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/test/java/com/banking/configserver/ConfigserverApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/test/java/com/banking/loans/LoansApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/test/java/com/banking/loans/LoansApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,41 +39,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.accounts [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.accounts [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.accounts [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.accounts [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.cards [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.cards [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.configserver [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.configserver [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.loans [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.loans [package].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AccountsApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ConfigserverApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.LoansApplication.executor&quot;: &quot;Run&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Workplace/banking-microservice/docker-compose/prod&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.accounts [clean].executor": "Run",
+    "Maven.accounts [compile].executor": "Run",
+    "Maven.accounts [install].executor": "Run",
+    "Maven.accounts [package].executor": "Run",
+    "Maven.cards [clean].executor": "Run",
+    "Maven.cards [package].executor": "Run",
+    "Maven.configserver [clean].executor": "Run",
+    "Maven.configserver [package].executor": "Run",
+    "Maven.loans [clean].executor": "Run",
+    "Maven.loans [package].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHELLCHECK.PATH": "C:\\Users\\HuyCao\\AppData\\Roaming\\JetBrains\\IntelliJIdea2024.3\\plugins\\Shell Script\\shellcheck.exe",
+    "Spring Boot.AccountsApplication.executor": "Run",
+    "Spring Boot.CardsApplication.executor": "Run",
+    "Spring Boot.ConfigserverApplication.executor": "Run",
+    "Spring Boot.LoansApplication.executor": "Run",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/Workplace/banking-microservice/docker-compose/prod",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -107,7 +98,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AccountsApplication">
+  <component name="RunManager" selected="Spring Boot.ConfigserverApplication">
     <configuration name="AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="accounts" />
@@ -168,7 +159,7 @@
       <updated>1743953178786</updated>
       <workItem from="1743953181682" duration="11591000" />
       <workItem from="1744009212668" duration="249000" />
-      <workItem from="1750329631618" duration="845000" />
+      <workItem from="1750329631618" duration="4733000" />
     </task>
     <servers />
   </component>
