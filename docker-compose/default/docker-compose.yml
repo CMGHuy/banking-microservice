@@ -30,7 +30,7 @@ services:
       service: microservice-db-config
 
   configserver:
-    image: "cmghuy/configserver:s7"
+    image: "cmghuy/configserver:s8"
     container_name: configserver-ms
     build:
       context: "../../configserver"
@@ -47,8 +47,31 @@ services:
       file: common-config.yml
       service: microservice-base-config
 
+  eurekaserver:
+    image: "cmghuy/eurekaserver:s8"
+    container_name: eurekaserver-ms
+    build:
+      context: "../../eurekaserver"
+      dockerfile: "Dockerfile"
+    ports:
+      - "8070:8070"
+    healthcheck:
+      test: "curl --fail --silent localhost:8070/actuator/health/readiness | grep UP || exit 1"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    environment:
+      SPRING_APPLICATION_NAME: "eurekaserver"
+    extends:
+      file: common-config.yml
+      service: microservice-configserver-config
+    depends_on:
+      configserver:
+        condition: service_healthy
+
   accounts:
-    image: "cmghuy/accounts:s7"
+    image: "cmghuy/accounts:s8"
     container_name: accounts-ms
     build:
       context: "../../accounts"
@@ -60,13 +83,13 @@ services:
       SPRING_DATASOURCE_URL: "jdbc:mysql://accountsdb:3306/accountsdb"
     extends:
       file: common-config.yml
-      service: microservice-configserver-config
+      service: microservice-eurekaserver-config
     depends_on:
       accountsdb:
         condition: service_healthy
 
   loans:
-    image: "cmghuy/loans:s7"
+    image: "cmghuy/loans:s8"
     container_name: loans-ms
     build:
       context: "../../loans"
@@ -78,13 +101,13 @@ services:
       SPRING_DATASOURCE_URL: "jdbc:mysql://loansdb:3306/loansdb"
     extends:
       file: common-config.yml
-      service: microservice-configserver-config
+      service: microservice-eurekaserver-config
     depends_on:
       loansdb:
         condition: service_healthy
 
   cards:
-    image: "cmghuy/cards:s7"
+    image: "cmghuy/cards:s8"
     container_name: cards-ms
     build:
       context: "../../cards"
@@ -96,7 +119,7 @@ services:
       SPRING_DATASOURCE_URL: "jdbc:mysql://cardsdb:3306/cardsdb"
     extends:
       file: common-config.yml
-      service: microservice-configserver-config
+      service: microservice-eurekaserver-config
     depends_on:
       cardsdb:
         condition: service_healthy
