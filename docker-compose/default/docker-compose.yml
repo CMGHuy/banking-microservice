@@ -30,7 +30,7 @@ services:
       service: microservice-db-config
 
   configserver:
-    image: "cmghuy/configserver:s8"
+    image: "cmghuy/configserver:s9"
     container_name: configserver-ms
     build:
       context: "../../configserver"
@@ -48,7 +48,7 @@ services:
       service: microservice-base-config
 
   eurekaserver:
-    image: "cmghuy/eurekaserver:s8"
+    image: "cmghuy/eurekaserver:s9"
     container_name: eurekaserver-ms
     build:
       context: "../../eurekaserver"
@@ -71,7 +71,7 @@ services:
         condition: service_healthy
 
   accounts:
-    image: "cmghuy/accounts:s8"
+    image: "cmghuy/accounts:s9"
     container_name: accounts-ms
     build:
       context: "../../accounts"
@@ -89,7 +89,7 @@ services:
         condition: service_healthy
 
   loans:
-    image: "cmghuy/loans:s8"
+    image: "cmghuy/loans:s9"
     container_name: loans-ms
     build:
       context: "../../loans"
@@ -107,7 +107,7 @@ services:
         condition: service_healthy
 
   cards:
-    image: "cmghuy/cards:s8"
+    image: "cmghuy/cards:s9"
     container_name: cards-ms
     build:
       context: "../../cards"
