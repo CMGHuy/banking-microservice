@@ -43,3 +43,9 @@ info:
     name: "loans"
     description: "Banking Loans Microservice"
     version: "1.0"
+
+logging:
+  level:
+    com:
+      banking:
+        loans: "DEBUG"

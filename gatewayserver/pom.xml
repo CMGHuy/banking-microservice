@@ -11,6 +11,7 @@
 	<groupId>com.banking</groupId>
 	<artifactId>gatewayserver</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>gatewayserver</name>
 	<description>Microservice for Gateway</description>
 	<url/>
@@ -41,7 +42,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-gateway-server-webmvc</artifactId>
+			<artifactId>spring-cloud-starter-gateway</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
