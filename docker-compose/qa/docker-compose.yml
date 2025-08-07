@@ -62,6 +62,9 @@ services:
   eurekaserver:
     image: "cmghuy/eurekaserver:s10"
     container_name: eurekaserver-ms
+    build:
+      context: "../../eurekaserver"
+      dockerfile: "Dockerfile"
     ports:
       - "8070:8070"
     depends_on:
