@@ -30,7 +30,7 @@ services:
       service: microservice-db-config
 
   configserver:
-    image: "cmghuy/configserver:s10"
+    image: "cmghuy/configserver:s11"
     container_name: configserver-ms
     build:
       context: "../../configserver"
@@ -60,7 +60,7 @@ services:
       service: network-deploy-service
 
   eurekaserver:
-    image: "cmghuy/eurekaserver:s10"
+    image: "cmghuy/eurekaserver:s11"
     container_name: eurekaserver-ms
     build:
       context: "../../eurekaserver"
@@ -83,7 +83,7 @@ services:
       SPRING_APPLICATION_NAME: "eurekaserver"
 
   accounts:
-    image: "cmghuy/accounts:s10"
+    image: "cmghuy/accounts:s11"
     container_name: accounts-ms
     build:
       context: "../../accounts"
@@ -109,7 +109,7 @@ services:
         condition: service_healthy
 
   loans:
-    image: "cmghuy/loans:s10"
+    image: "cmghuy/loans:s11"
     container_name: loans-ms
     build:
       context: "../../loans"
@@ -135,7 +135,7 @@ services:
         condition: service_healthy
 
   cards:
-    image: "cmghuy/cards:s10"
+    image: "cmghuy/cards:s11"
     container_name: cards-ms
     build:
       context: "../../cards"
@@ -161,7 +161,7 @@ services:
         condition: service_healthy
 
   gatewayserver:
-    image: "cmghuy/gatewayserver:s10"
+    image: "cmghuy/gatewayserver:s11"
     container_name: gatewayserver-ms
     build:
       context: "../../gatewayserver"
