@@ -18,6 +18,9 @@ management:
     health:
       probes:
         enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
 
 server:
   port: 8070
@@ -30,3 +33,11 @@ eureka:
     registerWithEureka: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+logging:
+  level:
+    com:
+      banking:
+        eurekaserver: "DEBUG"
+  pattern:
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"

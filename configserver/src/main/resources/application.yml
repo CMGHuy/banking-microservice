@@ -31,6 +31,17 @@ management:
     health:
       probes:
         enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
+
+logging:
+  level:
+    com:
+      banking:
+        configserver: "DEBUG"
+  pattern:
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
 
 encrypt:
   key: "koRWqjg21g97I7het_bclo9trLW3BGkWhzVvtilHto"

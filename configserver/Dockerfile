@@ -1,5 +1,5 @@
 #Start with a base image containing Java runtime
-FROM openjdk:23-jdk-slim
+FROM eclipse-temurin:23-jdk
 
 # MAINTAINER instruction is deprecated in favor of using label
 # MAINTAINER caogiahuy77@yahoo.com
@@ -12,8 +12,14 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
+# Create folder
+RUN mkdir -p /app/libs
+
 # Add the application's jar to the image
 COPY target/configserver-0.0.1-SNAPSHOT.jar configserver-0.0.1-SNAPSHOT.jar
 
+# Copy opentelemetry javaagent
+COPY target/dependency/opentelemetry-javaagent-*.jar /app/libs/
+
 # execute the application
-ENTRYPOINT ["java", "-jar", "configserver-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-javaagent:/app/libs/opentelemetry-javaagent-2.22.0.jar", "-jar", "configserver-0.0.1-SNAPSHOT.jar"]
